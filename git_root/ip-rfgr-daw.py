@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[4]:
 
 
 from IPython.display import display, IFrame, HTML
@@ -29,7 +29,7 @@ import pickle
 from scipy.spatial.distance import euclidean, cityblock, cosine
 from dash.dependencies import Input, Output, State
 
-app = dash.Dash(assets_folder='web/data', )
+app = dash.Dash(assets_folder='web/data', assets_url_path='web/data')
 
 with open('data/cluster0_agg_re.pickle', 'rb') as fp:
     cluster0_agg_re = pickle.load(fp) # Offlane - Disabler / Healer - Position 3/4 - Utility
@@ -345,7 +345,7 @@ app.layout = html.Div([
           'padding': '50px',
           'margin-left': '28%', 'margin-right': '28%'})
 ], style={'background-color': 'black',
-          'background-image': 'url(static/dota2bg.jpg)',
+          'background-image': 'url(web/data/dota2bg.jpg)',
           'background-position': 'top',
           'background-repeat': 'no-repeat',
           'background-attachment': 'scroll',

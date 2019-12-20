@@ -281,7 +281,7 @@ app.layout = html.Div([
                 Radiant and the Dire.
             ''', style={'text-align': 'justify'}),
     html.Br(),
-    html.Div(html.Img(src=app.get_asset_url('radiantvsdire.jpg'),
+    html.Div(html.Img(src=app.get_asset_url('radiantvsdire.JPG'),
                      style={'max-width': '100%', 'max-height': '100%'}),
              style={'text-align': 'center'}),
     html.Div('Radiant vs Dire', 

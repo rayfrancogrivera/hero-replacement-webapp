@@ -362,7 +362,7 @@ def display_banned_hero(banned_hero):
 
 @app.callback(Output('banned_hero_role_image', 'children'),
              [Input('banned_hero_role', 'value')])
-def display_banned_hero(banned_hero_role):
+def display_banned_hero_role(banned_hero_role):
     if banned_hero_role == None:
         return html.Div("Choose the banned hero's role!")
     else:
